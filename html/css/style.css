@@ -470,6 +470,72 @@ a:focus {
 .section-form {
   padding-top: 79px;
   background-color: #2f2745;
+  padding-bottom: 87px;
+}
+.section-form .box {
+  margin-bottom: 32px;
+}
+.box-forma {
+  zoom: 1;
+}
+.box-forma:before,
+.box-forma:after {
+  content: "";
+  display: table;
+}
+.box-forma:after {
+  clear: both;
+}
+.box-forma .inp {
+  display: block;
+  width: 360px;
+  height: 64px;
+  margin-bottom: 25px;
+  padding-left: 18px;
+  margin-right: 30px;
+  font-size: 20px;
+  font-weight: 400;
+  border: none;
+}
+.box-forma .inp:last-child {
+  margin-bottom: 0;
+}
+.box-forma .inp:focus {
+  border: 3px solid #ffd616;
+  outline: none;
+}
+.box-forma .textarea {
+  resize: none;
+  width: 750px;
+  height: 242px;
+  padding-top: 18px;
+  padding-left: 18px;
+  font-size: 20px;
+  font-weight: 400;
+  border: none;
+}
+.box-forma .textarea:focus {
+  border: 3px solid #ffd616;
+  outline: none;
+}
+.box-forma .form__left {
+  display: inline-block;
+  vertical-align: top;
+}
+.box-forma .form__right {
+  display: inline-block;
+  vertical-align: top;
+}
+.box-forma .btn-submit-wrap {
+  margin-top: 27px;
+  text-align: right;
+}
+.box-forma .btn-submit {
+  display: inline-block;
+  border: none;
+  background: url(../img/btn/btn-bg-submit.png) no-repeat;
+  background-size: cover;
+  width: 243px;
 }
 /*========== Карта =============*/
 .section-map {
