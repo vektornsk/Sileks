@@ -14,14 +14,13 @@ $(function() {
 			},
 			
 			Phone:{
+				required: true,
 				number:true
 				
 			},
-
 			Email:{
-				required: true,
 				email: true
-				
+
 			}
 		}
 	});
@@ -38,6 +37,7 @@ $(function() {
 			},
 
 			Phone:{
+				required: true,
 				number:true
 
 			},
