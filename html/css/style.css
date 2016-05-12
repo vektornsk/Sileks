@@ -54,11 +54,19 @@ a:focus {
   width: 100%;
   overflow: hidden;
 }
+.section-color {
+  background: url('../img/bg.png') repeat center center;
+}
+label.error {
+  display: none !important;
+}
 /*================= section-top ==================*/
 .section-top {
   padding-top: 41px;
   background-color: rgba(11, 0, 46, 0.6);
   height: 828px;
+  background: url('../img/Back_1.jpg') no-repeat;
+  background-size: cover;
 }
 /*================= menu =========================*/
 .menu {
@@ -233,6 +241,8 @@ a:focus {
   padding-top: 79px;
   height: 1027px;
   background-color: rgba(11, 0, 46, 0.6);
+  background: url('../img/Back_2.jpg') no-repeat;
+  background-size: cover;
 }
 .info {
   margin-top: 70px;
@@ -301,6 +311,7 @@ a:focus {
 }
 .section-recall .slide {
   width: 1005px;
+  background: #fff;
   padding: 15px 60px 15px;
   border-left: 1px solid #c7c7c7;
   border-right: 1px solid #c7c7c7;
@@ -402,6 +413,8 @@ a:focus {
 /*========== характеристика ==========*/
 .section-characteristic {
   background-color: rgba(11, 0, 46, 0.6);
+  background: url('../img/Back_3.jpg') no-repeat;
+  background-size: cover;
   padding-top: 79px;
 }
 /*=========== Таблица =================*/
@@ -424,17 +437,31 @@ a:focus {
 .characteristic .td-color1 {
   background-color: #ffd616;
   border: 2px solid #000;
+  border-left: none;
   font-weight: 700;
+}
+.characteristic .td-color1.br-t {
+  border-top: none;
+}
+.characteristic .td-color1.br-b {
+  border-bottom: none;
 }
 .characteristic .td-color2 {
   background-color: #e2ff6d;
   border: 2px solid #000;
+  border-right: none;
   font-weight: 700;
+}
+.characteristic .td-color2.br-t {
+  border-top: none;
+}
+.characteristic .td-color2.br-b {
+  border-bottom: none;
 }
 .characteristic .td-color3 {
   background-color: #fff5c6;
   border-top: 2px solid #000;
-  border-left: 2px solid #000;
+  border-left: none;
 }
 .characteristic .td-color4 {
   background-color: #fae78c;
@@ -464,7 +491,7 @@ a:focus {
 .characteristic .td-color10 {
   background-color: #a1c31e;
   border-top: 2px solid #000;
-  border-right: 2px solid #000;
+  border-right: none;
 }
 /*========== форма на главной =============*/
 .section-form {
@@ -496,6 +523,9 @@ a:focus {
   font-size: 20px;
   font-weight: 400;
   border: none;
+}
+.box-forma .inp.error {
+  border: 2px solid #ed1818 !important;
 }
 .box-forma .inp:last-child {
   margin-bottom: 0;
@@ -628,6 +658,96 @@ a:focus {
 .fix-menu .menu .tel__number {
   color: #2d2d2d;
 }
+/*========== popup ============*/
+.popup {
+  background: #fff;
+  padding: 40px;
+  width: 853px;
+}
+.popup .box-forma .inp {
+  border: 1px solid #c2c2c2;
+  width: 281px;
+  height: 61px;
+}
+.popup .box-forma .textarea {
+  border: 1px solid #c2c2c2;
+  width: 457px;
+  height: 273px;
+}
+.popup .popup__name {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 48px;
+  margin-bottom: 20px;
+}
+.easypopup {
+  z-index: 20;
+}
+.easypopup-black {
+  background: rgba(0, 0, 0, 0.6);
+  z-index: 10;
+}
+.easypopup-close {
+  border: 1px solid #c2c2c2;
+  width: 50px;
+  height: 50px;
+}
+.easypopup-close:hover:after {
+  border-top: 4px solid #000;
+}
+.easypopup-close:hover:before {
+  border-top: 4px solid #000;
+}
+.easypopup-close:after,
+.easypopup-close:before {
+  border-top: 4px solid #c2c2c2;
+}
+/*=========== forma-cons ===============*/
+.popup-cons {
+  text-align: center;
+  background: #fff;
+  padding: 40px;
+  width: 440px;
+}
+.popup-cons .box-forma .inp {
+  border: 1px solid #c2c2c2;
+  width: 281px;
+  height: 61px;
+  display: inline-block;
+  margin-right: 0;
+}
+.popup-cons .box-forma .textarea {
+  border: 1px solid #c2c2c2;
+  width: 457px;
+  height: 273px;
+}
+.popup-cons .box-forma .btn-submit-wrap {
+  text-align: center;
+  margin-top: 10px;
+}
+.popup-cons .popup__name {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 38px;
+  margin-bottom: 30px;
+}
+/*============ forma-ok =================*/
+.box-forma-ok {
+  text-align: center;
+}
+.box-forma-ok img {
+  margin-bottom: 30px;
+}
+.box-forma-ok .head_h3 {
+  font-weight: 700;
+  font-size: 30px;
+  margin-bottom: 10px;
+}
+.box-forma-ok span {
+  display: block;
+  font-weight: 400;
+  font-size: 20px;
+}
 /*========== Блоки =============*/
 .box {
   text-align: center;
@@ -637,7 +757,7 @@ a:focus {
   font-size: 46px;
   color: #ffffff;
   text-transform: uppercase;
-  margin-bottom: 60px;
+  margin-bottom: 50px;
 }
 .box .head_h2 {
   font-weight: 700;

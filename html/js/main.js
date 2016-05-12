@@ -1,4 +1,76 @@
 $(function() {
+	
+	
+/*======== valid =========*/
+	
+	$("#form-call").validate({
+
+		rules:{
+
+			Name:{
+				required: true,
+				minlength: 2
+				
+			},
+			
+			Phone:{
+				number:true
+				
+			},
+
+			Email:{
+				required: true,
+				email: true
+				
+			}
+		}
+	});
+	
+	
+	$("#form-call-popup").validate({
+
+		rules:{
+
+			Name:{
+				required: true,
+				minlength: 2
+
+			},
+
+			Phone:{
+				number:true
+
+			},
+
+			Email:{
+				required: true,
+				email: true
+
+			}
+		}
+	});
+	
+	
+	$("#form-cons").validate({
+
+		rules:{
+
+			Name:{
+				required: true,
+				minlength: 2
+
+			},
+
+			Phone:{
+				required: true,
+				number:true
+
+			}
+
+		}
+	});
+	
+	
 
 /*======== map =========*/
 	
@@ -6,7 +78,7 @@ $(function() {
 
 		ymaps.ready(function(){
 			var myMap = new ymaps.Map("Map", {
-				center:[82.920430, 55.030199], 
+				center:[55.048518279840884,82.91138350000001], 
 				zoom:17
 			}),
 				myPlacemark = new ymaps.Placemark(myMap.getCenter(), {
@@ -19,7 +91,7 @@ $(function() {
 					iconImageSize: [70, 93],
 					// Смещение левого верхнего угла иконки относительно
 					// её "ножки" (точки привязки).
-					iconImageOffset: [-3, -42]
+					iconImageOffset: [0, 0]
 				});
 
 			myMap.geoObjects.add(myPlacemark);
