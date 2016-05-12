@@ -531,7 +531,7 @@ label.error {
   margin-bottom: 0;
 }
 .box-forma .inp:focus {
-  border: 3px solid #ffd616;
+  border: 2px solid #ffd616;
   outline: none;
 }
 .box-forma .textarea {
@@ -545,7 +545,7 @@ label.error {
   border: none;
 }
 .box-forma .textarea:focus {
-  border: 3px solid #ffd616;
+  border: 2px solid #ffd616;
   outline: none;
 }
 .box-forma .form__left {
