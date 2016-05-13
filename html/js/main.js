@@ -88,10 +88,10 @@ $(function() {
 					// Своё изображение иконки метки.
 					iconImageHref: 'img/map.png',
 					// Размеры метки.
-					iconImageSize: [70, 93],
+					iconImageSize: [70, 96],
 					// Смещение левого верхнего угла иконки относительно
 					// её "ножки" (точки привязки).
-					iconImageOffset: [0, 0]
+					iconImageOffset: [-35, -96]
 				});
 
 			myMap.geoObjects.add(myPlacemark);

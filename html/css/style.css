@@ -722,6 +722,12 @@ label.error {
 .fix-menu .menu .tel__number {
   color: #2d2d2d;
 }
+.fix-menu .logo {
+  height: 85px;
+}
+.fix-menu .logo__img {
+  margin-top: 20px;
+}
 /*========== popup ============*/
 .popup {
   background: #fff;
