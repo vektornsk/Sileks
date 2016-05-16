@@ -13,7 +13,7 @@ html {
 }
 body {
   width: 100%;
-  min-width: 1200px;
+  min-width: 1280px;
   height: 100%;
   font-family: 'PT Sans', sans-serif;
   color: #2d2d2d;
@@ -53,6 +53,9 @@ a:focus {
 .wrapper {
   width: 100%;
   overflow: hidden;
+}
+.container {
+  min-width: 1280px !important;
 }
 .section-color {
   background: url('../img/bg.png') repeat center center;
